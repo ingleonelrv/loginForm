@@ -5,9 +5,9 @@ import {
   createAppContainer} from 'react-navigation'
 
 //LOGIN SECTION
-import Login from '../login/containers/login'
-import RegisterAs from '../login/containers/registerAs'
-import Register from '../login/containers/register'
+import Login from '../login/containers/loginContainer'
+import RegisterAs from '../login/containers/registerAsContainer'
+import Register from '../login/containers/registerContainer'
 import Home from '../home'
 
 const LoginNavigator = createStackNavigator({

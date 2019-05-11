@@ -10,7 +10,9 @@
     "react": "16.8.3",
     "react-native": "0.59.8",
     "react-native-gesture-handler": "^1.2.1",
-    "react-navigation": "^3.9.1"
+    "react-native-gifted-form": "^0.1.1",
+    "react-navigation": "^3.9.1",
+    "tcomb-form-native": "^0.6.20"
   },
   "devDependencies": {
     "@babel/core": "7.4.4",
