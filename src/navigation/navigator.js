@@ -1,39 +1,56 @@
 import {
   createStackNavigator,
   createSwitchNavigator,
-  createBottomTabNavigator, 
-  createAppContainer} from 'react-navigation'
+  createBottomTabNavigator,
+  createAppContainer
+} from "react-navigation";
 
 //LOGIN SECTION
-import Login from '../login/containers/loginContainer'
-import RegisterAs from '../login/containers/registerAsContainer'
-import Register from '../login/containers/registerContainer'
-import Home from '../home'
+import Login from "../login/containers/loginContainer";
+import RegisterAs from "../login/containers/registerAsContainer";
+import Register from "../login/containers/registerContainer";
+import Home from "../home";
 
-const LoginNavigator = createStackNavigator({
+const LoginNavigator = createStackNavigator(
+  {
     Login,
     RegisterAs,
     Register
-},{
-  initialRouteName:'Login',
-})
-
-const HomeStack = createBottomTabNavigator({
-    Home
-},{
-  initialRouteName:'Home',
-})
-const SwitchNavigator = createSwitchNavigator({
-//   Splash,
-  Login:{
-    screen:LoginNavigator
   },
-  Home:{
-    screen:HomeStack
-  }
-},{
-  initialRouteName:'Login'
-})
-const AppContainer= createAppContainer(SwitchNavigator)
+  {
+    initialRouteName: "Login",
+    defaultNavigationOptions: {
+      // headerStyle: {
+      //   backgroundColor: '#2196F3',
 
-export default AppContainer
+      // },
+      headerTransparent: true
+    }
+  }
+);
+
+const HomeStack = createBottomTabNavigator(
+  {
+    Home
+  },
+  {
+    initialRouteName: "Home"
+  }
+);
+const SwitchNavigator = createSwitchNavigator(
+  {
+    //   Splash,
+    Login: {
+      screen: LoginNavigator
+    },
+    Home: {
+      screen: HomeStack
+    }
+  },
+  {
+    initialRouteName: "Login"
+  }
+);
+const AppContainer = createAppContainer(SwitchNavigator);
+
+export default AppContainer;
