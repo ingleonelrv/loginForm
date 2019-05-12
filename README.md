@@ -11,5 +11,5 @@ $react-native run-android<br><br>
 Ejecutar el servidor:<br>
 $npm run dev <br><br>
 
-[!login](https://github.com/ingleonelrv/loginForm/blob/master/login.png)
-[!register](https://github.com/ingleonelrv/loginForm/blob/master/register.png)
+![login](https://github.com/ingleonelrv/loginForm/blob/master/login.png)
+![register](https://github.com/ingleonelrv/loginForm/blob/master/register.png)
