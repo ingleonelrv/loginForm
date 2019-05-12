@@ -1,5 +1,5 @@
 # loginForm
-Formulario para login y registro, backend funcional con NodeJS. Al hacer login pasa a Home gestionado con React Navigation<br><br>
+Formulario para login y registro, backend funcional con NodeJS, expressjs y mongoDB. Al hacer login pasa a Home gestionado con React Navigation<br><br>
 
 Para usarlo, primero instalar las dependencias del frontend:<br>
 $ npm i <br><br>
